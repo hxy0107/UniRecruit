@@ -43,4 +43,20 @@ public class UniData {
     public void setUniCategory(String uniCategory) {
         this.uniCategory = uniCategory;
     }
+
+    public long getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(long cityId) {
+        this.cityId = cityId;
+    }
+
+    public String getCityName() {
+        return cityName;
+    }
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
 }

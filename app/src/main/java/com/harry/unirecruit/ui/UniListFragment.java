@@ -31,9 +31,23 @@ public class UniListFragment extends ListFragment {
 
     private ClipboardManager mClipboardManager;
 
-    private String[] values = new String[]{"武汉大学", "华中科技大学", "华中师范大学", "武汉理工大学", "中国地质大学 (武汉)", "华中农业大学", "中南财经政法大学", "湖北大学", "武汉科技大学"};
+    private String[] values = new String[]{"武汉大学", "华中科技大学", "华中师范大学", "武汉理工大学", "中国地质大学 (武汉)", "华中农业大学", "中南财经政法大学", "湖北大学", "武汉科技大学",
+
+            "武汉工程大学(二本)","武汉纺织大学(二本)","武汉轻工大学(二本)","湖北工业大学(二本)","湖北中医药大学(二本)","武汉体育学院(二本)","湖北美术学院(二本)","中南民族大学(二本)",
+            "江汉大学(二本)","湖北警官学院(二本)","武汉音乐学院(二本)","湖北经济学院(二本)","武汉商学院(二本)",
+
+
+
+    };
     private String[] urls = new String[]{"http://hr.whu.edu.cn/", "http://employment.hust.edu.cn/", "http://zhaopin.whut.edu.cn/", "http://hr.ccnu.edu.cn",
-            "http://www.cug.edu.cn/", "http://rsc.hzau.edu.cn/zpygs/zpxx/", "http://rsb.zuel.edu.cn/1276/list.htm", "http://renshi.hubu.edu.cn", "http://rsc.wust.edu.cn/"};
+            "http://www.cug.edu.cn/", "http://rsc.hzau.edu.cn/zpygs/zpxx/", "http://rsb.zuel.edu.cn/1276/list.htm", "http://renshi.hubu.edu.cn", "http://rsc.wust.edu.cn/",
+
+
+            "http://zzrsb.wit.edu.cn/","http://rsc.wtu.edu.cn/","http://rsc.whpu.edu.cn/","http://rsc.hbut.edu.cn/","http://rsc.hbtcm.edu.cn/",
+            "http://wipe.edu.cn","http://rsc.hifa.edu.cn/","http://www.scuec.edu.cn/zzrsb/","http://rsc.jhun.edu.cn/2435/list.htm","http://www.hbpa.edu.cn/rsgk.htm",
+            "http://rsc.whcm.edu.cn/","http://rsc.hbue.edu.cn/","http://wbu.edu.cn/"
+    };
+
 
 
     @Override
