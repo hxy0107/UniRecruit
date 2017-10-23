@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.harry.unirecruit.ui.BrowserActivity;
+import com.harry.unirecruit.ui.UniListFragment;
 
 public class MainActivity extends AppCompatActivity {
     public static final int MODE_DEFAULT = 0;
@@ -26,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String DEMO_URL = "http://mc.vip.qq.com/demo/indexv3";
 
-    private TextView mTextMessage;
-    private Button mButton;
+//    private TextView mTextMessage;
+//    private Button mButton;
+
+    private FragmentManager manager;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -36,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+//                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+//                    mTextMessage.setText(R.string.title_dashboard);
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+//                    mTextMessage.setText(R.string.title_notifications);
                     return true;
             }
             return false;
@@ -56,15 +60,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        mButton=(Button)findViewById(R.id.button);
-        mButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startBrowserActivity(MODE_LOAD_CACHE_ELSE_NETWORK);
+//        mTextMessage = (TextView) findViewById(R.id.message);
+//        mButton=(Button)findViewById(R.id.button);
+//        mButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startBrowserActivity(MODE_LOAD_CACHE_ELSE_NETWORK);
+//
+//            }
+//        });
 
-            }
-        });
+        manager=getSupportFragmentManager();
+
+        manager.beginTransaction().add(R.id.fragment_container,new UniListFragment()).commitAllowingStateLoss();
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
