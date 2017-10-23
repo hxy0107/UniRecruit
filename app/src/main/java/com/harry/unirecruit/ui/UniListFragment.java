@@ -31,9 +31,9 @@ public class UniListFragment extends ListFragment {
 
     private ClipboardManager mClipboardManager;
 
-    private String[] values = new String[]{"武汉大学", "华中科技大学", "华中师范大学", "武汉理工大学","中国地质大学 (武汉)","华中农业大学","中南财经政法大学","湖北大学","武汉科技大学"};
-    private String[] urls = new String[]{"http://hr.whu.edu.cn/", "http://employment.hust.edu.cn/", "http://zhaopin.whut.edu.cn/","http://hr.ccnu.edu.cn",
-            "http://www.cug.edu.cn/","http://rsc.hzau.edu.cn/zpygs/zpxx/","http://rsb.zuel.edu.cn/1276/list.htm","http://renshi.hubu.edu.cn","http://rsc.wust.edu.cn/"};
+    private String[] values = new String[]{"武汉大学", "华中科技大学", "华中师范大学", "武汉理工大学", "中国地质大学 (武汉)", "华中农业大学", "中南财经政法大学", "湖北大学", "武汉科技大学"};
+    private String[] urls = new String[]{"http://hr.whu.edu.cn/", "http://employment.hust.edu.cn/", "http://zhaopin.whut.edu.cn/", "http://hr.ccnu.edu.cn",
+            "http://www.cug.edu.cn/", "http://rsc.hzau.edu.cn/zpygs/zpxx/", "http://rsb.zuel.edu.cn/1276/list.htm", "http://renshi.hubu.edu.cn", "http://rsc.wust.edu.cn/"};
 
 
     @Override

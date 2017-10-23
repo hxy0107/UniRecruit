@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int MODE_SONIC_WITH_OFFLINE_CACHE = 2;
 
-    public static final int MODE_LOAD_CACHE_ELSE_NETWORK=3;
+    public static final int MODE_LOAD_CACHE_ELSE_NETWORK = 3;
 
     private static final int PERMISSION_REQUEST_CODE_STORAGE = 1;
 
@@ -70,9 +70,9 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        manager=getSupportFragmentManager();
+        manager = getSupportFragmentManager();
 
-        manager.beginTransaction().add(R.id.fragment_container,new UniListFragment()).commitAllowingStateLoss();
+        manager.beginTransaction().add(R.id.fragment_container, new UniListFragment()).commitAllowingStateLoss();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
