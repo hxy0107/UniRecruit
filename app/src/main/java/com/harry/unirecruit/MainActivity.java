@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.harry.unirecruit.ui.BrowserActivity;
+import com.harry.unirecruit.ui.HzUniListFragment;
 import com.harry.unirecruit.ui.UniListFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,9 +42,11 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
 //                    mTextMessage.setText(R.string.title_home);
+                    manager.beginTransaction().replace(R.id.fragment_container, new UniListFragment()).commitAllowingStateLoss();
                     return true;
                 case R.id.navigation_dashboard:
 //                    mTextMessage.setText(R.string.title_dashboard);
+                    manager.beginTransaction().replace(R.id.fragment_container, new HzUniListFragment()).commitAllowingStateLoss();
                     return true;
                 case R.id.navigation_notifications:
 //                    mTextMessage.setText(R.string.title_notifications);
