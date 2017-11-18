@@ -33,9 +33,14 @@ public class UniListFragment extends ListFragment {
 
     private String[] values = new String[]{"武汉大学", "华中科技大学", "[无效]华中师范大学", "武汉理工大学", "中国地质大学 (武汉)", "华中农业大学", "中南财经政法大学", "湖北大学", "武汉科技大学",
 
-            "[无效]武汉工程大学(二本)","武汉纺织大学(二本)","武汉轻工大学(二本)","湖北工业大学(二本)","湖北中医药大学(二本)","[无效]武汉体育学院(二本)","湖北美术学院(二本)","中南民族大学(二本)",
-            "江汉大学(二本)","湖北警官学院(二本)","武汉音乐学院(二本)","湖北经济学院(二本)","[无效]武汉商学院(二本)",
+            "[无效]武汉工程大学(二本)", "武汉纺织大学(二本)", "武汉轻工大学(二本)", "湖北工业大学(二本)", "湖北中医药大学(二本)", "[无效]武汉体育学院(二本)", "湖北美术学院(二本)", "中南民族大学(二本)",
+            "江汉大学(二本)", "湖北警官学院(二本)", "武汉音乐学院(二本)", "湖北经济学院(二本)", "[无效]武汉商学院(二本)",
 
+            "武汉科技大学城市学院(三本)", "武汉理工大学华夏学院(三本)", "武汉大学珞珈学院(三本)", "华中师范大学武汉传媒学院(三本)", "湖北经济学院法商学院(三本)", "湖北大学知行学院(三本)", "江汉大学文理学院(三本)",
+            "湖北工业大学工程技术学院(三本)", "武汉工程大学邮电与信息工程学院(三本)", "武汉纺织大学外经贸学院(三本)", "武汉体育学院体育科技学院(三本)"
+
+            , "武昌首义学院(民办三本)", "文华学院(民办三本)", "武汉工商学院(民办三本)", "武汉东湖学院(民办三本)", "武昌理工学院(民办三本)", "武汉学院(民办三本)",
+            "汉口学院(民办三本)", "武汉工程科技学院(民办三本)", "武汉生物工程学院(民办三本)", "武昌工学院(民办三本)", "湖北商贸学院(民办三本)", "武汉设计工程学院(民办三本)"
 
 
     };
@@ -43,11 +48,16 @@ public class UniListFragment extends ListFragment {
             "http://www.cug.edu.cn/", "http://rsc.hzau.edu.cn/zpygs/zpxx/", "http://rsb.zuel.edu.cn/1276/list.htm", "http://renshi.hubu.edu.cn", "http://rsc.wust.edu.cn/",
 
 
-            "http://zzrsb.wit.edu.cn/","http://rsc.wtu.edu.cn/","http://rsc.whpu.edu.cn/","http://rsc.hbut.edu.cn/","http://rsc.hbtcm.edu.cn/",
-            "http://wipe.edu.cn","http://rsc.hifa.edu.cn/","http://www.scuec.edu.cn/zzrsb/","http://rsc.jhun.edu.cn/2435/list.htm","http://www.hbpa.edu.cn/rsgk.htm",
-            "http://rsc.whcm.edu.cn/","http://rsc.hbue.edu.cn/","http://wbu.edu.cn/"
-    };
+            "http://zzrsb.wit.edu.cn/", "http://rsc.wtu.edu.cn/", "http://rsc.whpu.edu.cn/", "http://rsc.hbut.edu.cn/", "http://rsc.hbtcm.edu.cn/",
+            "http://wipe.edu.cn", "http://rsc.hifa.edu.cn/", "http://www.scuec.edu.cn/zzrsb/", "http://rsc.jhun.edu.cn/2435/list.htm", "http://www.hbpa.edu.cn/rsgk.htm",
+            "http://rsc.whcm.edu.cn/", "http://rsc.hbue.edu.cn/", "http://wbu.edu.cn/"
 
+            , "http://www.city.wust.edu.cn/", "http://www.hxut.edu.cn/plus/list.php?tid=1233", "http://rsc.luojia-whu.cn/index.php/Index-index.html", "http://rs.whmc.edu.cn/rczp/",
+            "http://fsxy.hbue.edu.cn/", "http://rzb.hudazx.cn/rcyj.htm", "http://rsb.jdwlxy.cn/index.html", "http://gcxy.hbut.edu.cn/", "http://www.witpt.edu.cn/", "http://cibe.wtu.edu.cn/", "http://kjxy.whsu.edu.cn/xwgk/rssz.htm"
+
+            , "http://rsc.wsyu.edu.cn/", "http://www.hustwenhua.net/", "http://www.wtbu.cn/rsb", "http://www.wdu.edu.cn/gljg/rsc/", "http://rsc.wut.edu.cn/", "http://rs.whxy.edu.cn/",
+            "http://hr.hkxy.edu.cn/", "http://rsc.wuhues.com/", "http://rsc.whsw.cn/", "http://rsc.wuit.cn/", "http://www.hugsmxy.com/", "http://www.hnctxy.com/"
+    };
 
 
     @Override
